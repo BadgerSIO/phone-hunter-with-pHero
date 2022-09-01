@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Phone Hunter</title>
+    <link rel="icon" type="image/x-icon" href="/images/saadlogo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
@@ -31,9 +32,9 @@
       };
     </script>
   </head>
-  <body class="font-poppins bg-blue-50">
-    <header>
-      <section class="min-h-[20vh]">
+  <body class="font-poppins bg-blue-50 relative">
+    <header class="sticky top-0 backdrop-blur-2xl pb-3">
+      <section id="headingPH">
         <div class="container">
           <h2 class="text-center text-3xl pt-10 font-semibold">
             Phone Hunter API
@@ -63,7 +64,7 @@
                 type="text"
                 id="searchPhones"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-                placeholder="Search"
+                placeholder="Enter Name of a Phone or Brand"
                 required=""
               />
             </div>
